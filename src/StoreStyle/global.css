@@ -1,0 +1,114 @@
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  gap: 20px;
+  padding: 10px 0;
+  margin-bottom: 1rem;
+  /* Previene la compressione degli elementi fuori schermo */
+  flex-wrap: nowrap !important;
+  width: 100%;
+  max-width: 100%;
+}
+
+.carousel::-webkit-scrollbar {
+  height: 6px;
+}
+
+.carousel::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+
+/* Previene la compressione del contenitore del carosello */
+.carousel > * {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  width: 280px; /* Assicura che ogni elemento del carosello abbia la stessa larghezza */
+}
+
+/* src/styles/globals.css */
+
+.svg-icon path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: draw 2s ease-in-out forwards;
+}
+  
+@keyframes draw {
+  to { stroke-dashoffset: 0; }
+}
+
+/* Aggiungi queste nuove regole */
+
+/* Animazioni per le porte */
+.door-left, .door-right {
+  position: fixed;
+  height: 100vh;
+  width: 50vw;
+  top: 0;
+  background: #00234F;
+  z-index: 100;
+}
+
+.door-left {
+  left: 0;
+  transform-origin: left;
+}
+
+.door-right {
+  right: 0;
+  transform-origin: right;
+}
+
+/* Stile per scaffali */
+.shelf-item {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  padding: 12px;
+  border-radius: 8px;
+  background: white;
+}
+
+.shelf-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Per stringere la sidebar sinistra solo nella pagina marketplace */
+.marketplace-container ~ .d-none.d-md-flex {
+  width: 280px !important; /* Ridotta da 320px a 280px */
+}
+
+/* Stile per la sidebar destra */
+.marketplace-container .right-sidebar {
+  width: 280px;
+  position: sticky;
+  top: 70px;
+  height: calc(100vh - 70px);
+  padding: 1rem;
+  overflow-y: auto;
+  flex-shrink: 0;
+  border-left: 1px solid rgba(255,255,255,0.15);
+  box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+}
+
+/* Per aumentare larghezza disponibile ai carousel */
+.marketplace-container .carousel {
+  margin-right: -15px;
+  padding-right: 15px;
+  overflow-x: auto;
+}
+
+/* Aumentare dimensioni card nei carousel */
+.marketplace-container .carousel > div {
+  min-width: 320px;
+}
+
+/* Stabilizza le sidebar */
+.right-sidebar {
+  width: 280px !important;
+  flex-shrink: 0 !important; /* Previene la compressione */
+  overflow-x: hidden; /* Assicura che il contenuto non provochi overflow */
+}

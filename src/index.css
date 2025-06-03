@@ -1,0 +1,1526 @@
+Desktop\Pop-Bucks\frontend\src\index.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #001935 !important; /* Colore Tumblr Blue */
+  color: #ffffff;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Soluzione DEFINITIVA per spazio bianco carosello */
+body {
+  background-color: #001935 !important;
+}
+
+html {
+  background-color: #001935;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* Assicura che tutte le card abbiano un bordo sottile per definire meglio i contorni */
+.card {
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Correzioni generali per il colore di sfondo */
+html, body, #root, .app-container {
+  background-color: #001935 !important;
+  min-height: 100vh;
+}
+
+/* Fix specifico per l'area del contenuto */
+.container-fluid, .row {
+  background-color: inherit;
+}
+
+/* Forza l'altezza del contenitore del carosello */
+.carousel-container {
+  background-color: #001935;
+  padding-bottom: 30px;
+}
+
+/* Imposta stile per tutte le card del carosello */
+.carousel-card {
+  margin-bottom: 0 !important;
+  height: 220px !important;
+}
+
+/* Assicura che le immagini abbiano dimensioni fisse */
+.carousel-card img {
+  height: 150px !important;
+  object-fit: cover;
+}
+
+/* Stili per card in stile Instagram */
+.instagram-large-card {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid rgba(219, 219, 219, 0.3);
+  margin-bottom: 10px;
+}
+
+/* RESET COMPLETO LAYOUT CARD */
+
+/* Fix card grandi e piccole */
+.instagram-big-card {
+  width: 100% !important; /* Responsivo */
+  max-width: 480px !important;
+  border: 1px solid rgba(219, 219, 219, 0.3);
+  margin-bottom: 10px;
+  background: white;
+  overflow: hidden;
+}
+
+.instagram-small-card {
+  width: 100%;
+  border: 1px solid rgba(219, 219, 219, 0.3);
+  background: white;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Forza il contenimento delle immagini */
+.col-lg-4, .col-lg-8 {
+  overflow: visible !important;
+}
+
+/* Allineamento colonne */
+.row {
+  --bs-gutter-x: 0.5rem !important;
+  overflow: visible;
+}
+
+/* Fix problema invasione layout */
+@media (min-width: 992px) {
+  .col-lg-4 {
+    max-width: 33.333333%;
+    flex: 0 0 auto;
+    width: 33.333333%;
+  }
+  
+  .col-lg-8 {
+    max-width: 66.666667%;
+    flex: 0 0 auto;
+    width: 66.666667%;
+  }
+}
+
+/* Assicura che le immagini mantengano le proporzioni */
+.instagram-big-card img {
+  object-fit: cover;
+}
+
+/* Stile per i post in stile Facebook */
+.facebook-post {
+  background-color: #00234F !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  color: white !important;
+  margin-bottom: 1rem;
+}
+
+.facebook-post .card-header {
+  background-color: #00234F !important;
+  color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.facebook-post .card-body {
+  background-color: #00234F !important;
+  color: white;
+}
+
+.facebook-post .card-footer {
+  background-color: #00234F !important;
+  color: white !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Dimensioni aumentate per i post grandi */
+.col-lg-4 .facebook-post .card-img-top,
+.col-lg-4 .facebook-post div[style*="overflow: 'hidden'"] {
+  height: 550px !important;
+}
+
+/* Dimensioni aumentate per i post piccoli */
+.col-lg-8 .facebook-post .card-img-top,
+.col-lg-8 .facebook-post div[style*="overflow: 'hidden'"] {
+  height: 230px !important;
+}
+
+/* Bottoni su sfondo scuro */
+.facebook-post .btn-light {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border: none !important;
+  color: white !important;
+}
+
+.facebook-post .btn-light:hover {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Testo e icone in bianco */
+.facebook-post .text-muted {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.facebook-post .bi {
+  color: white;
+}
+
+.facebook-post .bi-hand-thumbs-up-fill {
+  color: #1877f2 !important;
+}
+
+/* Fix HR colore */
+.facebook-post hr {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Fix per carosello */
+.carousel-item {
+  background-color: #001935 !important;
+  min-height: 300px;
+}
+
+
+
+/* Stili per la barra di ricerca */
+.search-bar {
+  background: transparent;
+  border-radius: 50px !important;
+  overflow: hidden;
+}
+
+.search-bar .input-group-text {
+  background-color: rgba(255, 255, 255, 0.15);
+  border: none;
+  color: white;
+}
+
+.search-bar .input-group-text:first-child {
+  border-top-left-radius: 50px !important;
+  border-bottom-left-radius: 50px !important;
+}
+
+.search-bar .input-group-text:last-child,
+.search-bar .form-control:last-child {
+  border-top-right-radius: 50px !important;
+  border-bottom-right-radius: 50px !important;
+}
+
+.search-bar .form-control {
+  background-color: rgba(255, 255, 255, 0.15);
+  border: none;
+  color: white;
+}
+
+.search-bar .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.search-bar .form-control:focus {
+  box-shadow: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+/* Stili per il dropdown dei risultati */
+.search-results {
+  background-color: #001935; /* Colore Tumblr-like */
+  border: none !important;
+  border-radius: 8px !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+  margin-top: 8px !important; /* Spazio tra barra e risultati */
+}
+
+.search-results .list-group-item {
+  background-color: #001935;
+  border-color: rgba(255, 255, 255, 0.1);
+  color: white !important;  /* Aggiunto !important per forzare il colore bianco */
+}
+
+.search-results .list-group-item .fw-bold,
+.search-results .list-group-item .text-muted {
+  color: white !important;  /* Forzare colore bianco per nome utente */
+}
+
+.search-results .list-group-item small.text-muted {
+  color: rgba(255, 255, 255, 0.7) !important;  /* Grigio chiaro per nome/cognome */
+}
+
+.search-results .list-group-item:hover,
+.search-results .list-group-item:focus,
+.search-results .list-group-item:active {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  color: white !important;
+}
+
+.search-results .list-group-item-action:hover,
+.search-results .list-group-item-action:focus,
+.search-results .list-group-item-action:active {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  color: white !important;
+}
+
+/* Spinner di caricamento */
+.search-results .spinner-border {
+  border-color: rgba(255, 255, 255, 0.5);
+  border-right-color: transparent;
+}
+
+/* Animazione fade per i risultati */
+.search-results {
+  animation: fadeIn 0.2s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+/* Animazione fade-in per i risultati */
+.search-results {
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Risoluzione problema riga sotto la navbar */
+.navbar {
+  box-shadow: none !important;
+  z-index: 1030;
+}
+
+/* Evita che il dropdown causi problemi di visualizzazione */
+.dropdown-menu {
+  margin-top: 0.5rem !important;
+}
+
+
+
+
+
+
+/* src/components/UserProfilePage.css */
+.user-profile-page { 
+  min-height: 100vh;
+  
+  padding-top: 100px !important; /* Aumenta spazio dalla navbar */
+}
+
+.user-profile-container {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+  overflow: hidden;
+  padding: 20px;
+}
+
+/* Profile section migliorato */
+.profile-section {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+  margin-bottom: 1.5rem;
+}
+
+/* Avatar improvements */
+.avatar-wrapper {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: transform 0.3s;
+}
+
+.avatar-wrapper:hover {
+  transform: scale(1.03);
+}
+
+.avatar {
+  width: 150px !important; /* Immagine più grande */
+  height: 150px !important; /* Immagine più grande */
+  object-fit: cover !important;
+  border-radius: 50% !important; /* Perfettamente circolare */
+  border: 4px solid white;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+.change-avatar-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  border-radius: 50%;
+  padding: 0.4rem;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  background-color: #007bff;
+  border: 2px solid white;
+  color: white;
+}
+
+.change-avatar-btn:hover {
+  background-color: #0069d9;
+  transform: scale(1.1);
+}
+
+/* User info */
+.info { 
+  margin-left: 1.5rem; 
+  width: 100%;
+  flex: 1;
+}
+
+.info .row1 { 
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between;
+}
+
+.info h2 { 
+  font-size: 2rem; 
+  color: #fff; 
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+/* Edit profile button */
+.edit-profile-btn {
+  background-color: #001935 !important;
+  color: white !important;
+  border: 2px solid #b0b0b0 !important;
+  transition: all 0.2s ease-in-out;
+  padding: 0.4rem 1rem;
+  font-weight: 500;
+}
+
+.edit-profile-btn:hover {
+  background-color: white !important;
+  color: #001935 !important;
+  border-color: #001935 !important;
+}
+
+/* Bio text */
+.bio-text {
+  color: white;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+  max-width: 80%;
+}
+
+/* Card styling */
+.summary-card, .about-card { 
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+  background: #fff; 
+  border: none; 
+}
+
+.summary-card h6, .about-card h5 { 
+  margin-bottom: 0.75rem; 
+  font-weight: bold; 
+  color: #001224;
+}
+
+.summary-card .link { 
+  font-size: 0.85rem; 
+  color: #5966ff; 
+  text-decoration: none;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.summary-card .link:hover {
+  text-decoration: underline;
+}
+
+/* About card details */
+.about-card .name {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.about-card .bio {
+  color: #555;
+  white-space: pre-line;
+}
+
+.additional-details {
+  border-top: 1px solid #eee;
+  padding-top: 1rem;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  color: #444;
+}
+
+.detail-item i {
+  color: #3a1657;
+  width: 22px;
+}
+
+/* Carousel improvements */
+.carousel-row { 
+  display: flex;
+  overflow-x: auto;
+  padding: 10px 0;
+  margin-bottom: 2rem;
+  scrollbar-width: thin;
+}
+
+.carousel-row::-webkit-scrollbar { 
+  display: none; 
+}
+
+.carousel-row { 
+  -ms-overflow-style: none; 
+  scrollbar-width: none;
+}
+
+.item { 
+  min-width: 240px;
+  margin-right: 15px;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.item:hover {
+  transform: scale(1.05);
+}
+
+.item-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.item-media {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+.item-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.5);
+  color: white;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.item:hover .item-overlay {
+  opacity: 1;
+}
+
+.item-stats {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  color: white;
+}
+
+.item-stat {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  color: white;
+}
+
+/* NUOVI STILI CAROSELLO VIDEO - sostituisce i precedenti */
+.carousel-row .video-item {
+  position: relative;
+  min-width: 200px;
+  width: 200px;
+  height: 200px;
+  margin-right: 15px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+.carousel-row .video-item .item-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-row .video-item .item-media {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Icona play centrata più piccola */
+.carousel-row .video-play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2.5rem;
+  opacity: 0.85;
+  z-index: 10;
+  filter: drop-shadow(0 0 5px rgba(0,0,0,0.5));
+  transition: all 0.2s ease;
+}
+
+.carousel-row .video-item:hover .video-play-button {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+/* Statistiche distanziate */
+.carousel-row .item-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0) 100%);
+  padding: 20px 10px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.carousel-row .item:hover .item-overlay {
+  opacity: 1;
+}
+
+/* Contenitore delle statistiche per maggiore spaziatura */
+.carousel-row .item-stats-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 15px;
+}
+
+.carousel-row .item-stat {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.carousel-row .item-stat i {
+  font-size: 1rem;
+}
+
+.carousel-row .item-stat span {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+/* Rimuovi stili superflui */
+.play-icon, .bi-play-circle-fill.play-icon {
+  display: none;
+}
+
+/* Effetti di hover per i profili */
+.profile-hover-effect {
+  position: relative;
+  z-index: 1;
+}
+
+.profile-hover-effect::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0);
+  box-shadow: 0 0 0 0 #001935(13, 110, 253, 0.4);
+  z-index: -1;
+  transition: box-shadow 0.3s ease;
+}
+
+.profile-hover-effect:hover::after {
+  box-shadow: 0 0 0 4px rgba(13, 110, 253, 0.4);
+}
+
+.username-hover-effect {
+  position: relative;
+}
+
+.username-hover-effect::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #001935;
+  transition: width 0.3s ease;
+}
+
+.username-hover-effect:hover::after {
+  width: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+  .profile-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .info {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+  
+  .info .row1 {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .avatar-wrapper {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .bio-text {
+    max-width: 100%;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  /* Mobile layout - ispirato a Instagram mobile */
+  .profile-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem 1rem;
+  }
+  
+  .avatar-wrapper {
+    margin-bottom: 1rem;
+  }
+  
+  .avatar {
+    width: 120px !important;
+    height: 120px !important;
+  }
+  
+  .info .row1 {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .edit-profile-btn {
+    width: 100%;
+  }
+  
+  .summary-card {
+    margin-top: 1rem;
+  }
+  
+  .carousel-row {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-left: 10px;
+    margin-left: -10px;
+    width: calc(100% + 20px);
+  }
+  
+  .item {
+    min-width: 160px;
+    margin-right: 10px;
+  }
+  
+  .item-media {
+    height: 150px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    max-width: 95%;
+  }
+  
+  .home-container {
+    max-width: calc(100% - 210px);
+  }
+  
+  .brochure-users {
+    font-size: 0.9rem;
+  }
+  
+  .brochure-users h5 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .avatar-wrapper {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .info h2 {
+    font-size: 1.5rem;
+  }
+  
+  .change-avatar-btn {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .item {
+    width: 110px;
+    height: 110px;
+  }
+  
+  .summary-card .card-body {
+    padding: 10px;
+  }
+  
+  .poping-container {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .home-container {
+    max-width: calc(100% - 300px);
+  }
+}
+
+/* Aggiungi questo alla fine del file CSS */
+
+/* Fix per lo spostamento laterale quando si apre un modale */
+body {
+  padding-right: 0 !important;
+}
+
+body.modal-open {
+  overflow: hidden;
+  padding-right: var(--scrollbar-width) !important;
+  /* Questa variabile verrà impostata via JavaScript */
+}
+
+/* SOLUZIONE DEFINITIVA per il popping/following - rimuove TUTTE le definizioni precedenti */
+.popping-wrapper,
+.popping-composite,
+.popping-img,
+.popping-ing,
+.popping-container-fixed,
+.popping-image-fixed,
+.ing-text-fixed {
+  all: initial !important;
+}
+
+/* Ripristino dei soli stili necessari */
+.poping-container {
+  display: flex;
+  align-items: center;
+}
+
+.poping-image {
+  height: 20px;
+  width: auto;
+  max-width: 25px;
+  margin-right: -1px;
+}
+
+.poping-text {
+  font-weight: 500;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Aggiungi alla fine del file */
+.video-item .item-container {
+  position: relative;
+}
+
+.video-item .play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem !important;
+  color: white;
+  opacity: 0.8;
+  transition: all 0.3s;
+  z-index: 2;
+}
+
+.video-item:hover .play-icon {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1.2);
+}
+
+/* Migliora visibilità statistiche */
+.item-overlay {
+  background: rgba(0,0,0,0.6) !important;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.item:hover .item-overlay {
+  opacity: 1;
+}
+
+.item-stats {
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.item-stat {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.item-stat i {
+  font-size: 1.2rem;
+}
+
+/* Stili per il carosello di video */
+.reels-container {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: #001935;
+  color: white;
+}
+
+.video-card {
+  transition: transform 0.2s;
+  overflow: hidden;
+  background-color: #00234F;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.video-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.video-thumbnail-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.video-play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 3rem;
+  opacity: 0.8;
+  transition: all 0.3s;
+}
+
+.video-thumbnail:hover .video-play-icon {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1.2);
+}
+
+.video-duration {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 2px 5px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+/* Scroll personalizzato per container video */
+.video-scroll-container::-webkit-scrollbar {
+  height: 6px;
+}
+
+.video-scroll-container::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.video-scroll-container::-webkit-scrollbar-thumb {
+  background: #3a87e0;
+  border-radius: 10px;
+}
+
+/* Aggiungi questo alla fine del file */
+
+/* Fix specifici per carosello video in UserProfilePage */
+.carousel-row .video-item {
+  width: 240px !important;
+  min-width: 240px !important;
+  height: 240px !important;
+  margin-right: 15px;
+  position: relative;
+}
+
+.carousel-row .video-item .item-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.carousel-row .video-item .item-media {
+  width: 100%;
+  height: 100%;
+  object-fit: cover !important;
+  object-position: center;
+}
+
+/* Assicura che l'icona play sia sempre visibile sui video */
+.carousel-row .video-item .bi-play-circle-fill {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  color: white;
+  opacity: 0.8;
+  z-index: 10;
+  text-shadow: 0 0 8px rgba(0,0,0,0.5);
+}
+
+.carousel-row .video-item:hover .bi-play-circle-fill {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1.2);
+  transition: all 0.3s ease;
+}
+
+/* Migliora visibilità dell'overlay con stats */
+.carousel-row .item-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.6) !important;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-row .item:hover .item-overlay {
+  opacity: 1;
+}
+
+/* Aggiungi questi stili alla fine del file */
+.carousel-row .video-item .item-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  height: 240px;
+}
+
+.carousel-row .video-item .item-media {
+  width: 100%;
+  height: 100% !important;
+  object-fit: cover;
+}
+
+.carousel-row .play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  color: white;
+  opacity: 0.8;
+  transition: all 0.3s;
+  z-index: 2;
+}
+
+.carousel-row .item:hover .play-icon {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1.2);
+}
+
+/* Aggiungi alla fine del file */
+.custom-dropdown-menu .dropdown-item:hover,
+.custom-dropdown-menu .dropdown-item:focus,
+.custom-dropdown-menu .dropdown-item:active {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  color: white !important;
+}
+
+/* Aggiungi alla fine del file */
+.search-results .list-group-item:hover,
+.search-results .list-group-item:focus,
+.search-results .list-group-item:active {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  color: white !important;
+}
+
+/* Correggi anche la classe .list-group-item-action che Bootstrap usa per elementi cliccabili */
+.search-results .list-group-item-action:hover,
+.search-results .list-group-item-action:focus,
+.search-results .list-group-item-action:active {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  color: white !important;
+}
+
+/* DEFINIZIONE COMPLETA E CORRETTA per il logo rotante 3D */
+@keyframes true-3d-rotation {
+  0% {
+    transform: rotateY(0deg) translateZ(10px);
+    filter: drop-shadow(5px 0 7px rgba(255, 215, 0, 0.8));
+  }
+  25% {
+    transform: rotateY(90deg) translateZ(10px);
+    filter: drop-shadow(0 0 7px rgba(255, 215, 0, 0.5));
+  }
+  50% {
+    transform: rotateY(180deg) translateZ(10px);
+    filter: drop-shadow(-5px 0 7px rgba(255, 215, 0, 0.8));
+  }
+  75% {
+    transform: rotateY(270deg) translateZ(10px);
+    filter: drop-shadow(0 0 7px rgba(255, 215, 0, 0.5));
+  }
+  100% {
+    transform: rotateY(360deg) translateZ(10px);
+    filter: drop-shadow(5px 0 7px rgba(255, 215, 0, 0.8));
+  }
+}
+
+.logo-container-3d {
+  perspective: 1000px;
+  width: 65px !important;
+  height: 65px !important;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.rotating-logo-3d {
+  width: 100% !important;
+  height: 100% !important;
+  animation: true-3d-rotation 7s infinite linear !important;
+  transform-style: preserve-3d !important;
+}
+
+/* Stile del Testo del Brand */
+.brand-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  letter-spacing: -0.5px;
+  margin-left: 5px;
+}
+
+.brand-first-p {
+  background: linear-gradient(135deg, #FFFFFF 30%, #FFD700 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 3px rgba(0,0,0,0.2);
+}
+
+.brand-second-p {
+  color: #FFFFFF;
+  text-shadow: 0 0 3px rgba(0,0,0,0.3);
+}
+
+.brand-p {
+  color: #FFD700;
+  text-shadow: 0 0 2px rgba(0,0,0,0.3);
+}
+
+.brand-dash {
+  color: #FFFFFF;
+  opacity: 0.8;
+  margin: 0 3px;
+}
+
+.brand-bucks {
+  color: #85BB65;
+  text-shadow: 
+    0 0 1px #000000,
+    0 0 2px rgba(0,0,0,0.5);
+  letter-spacing: -0.5px;
+}
+
+/* Rimuovere stili in conflitto */
+.navbar-brand {
+  padding: 0 !important;
+  margin-right: 1rem !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .logo-container-3d {
+    width: 50px !important;
+    height: 50px !important;
+  }
+  
+  .brand-text {
+    font-size: 22px;
+  }
+}
+
+/* Aggiungi alla fine del file */
+.coming-soon-badge {
+  background-color: #ff6b6b;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: bold;
+  padding: 2px 8px;
+  border-radius: 10px;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  animation: pulse 2s infinite;
+  box-shadow: 0 0 0 rgba(255, 107, 107, 0.4);
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 107, 107, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 8px rgba(255, 107, 107, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 107, 107, 0);
+  }
+}
+
+.coming-soon-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  pointer-events: none;
+}
+
+.coming-soon-text {
+  background-color: rgba(255, 107, 107, 0.9);
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transform: rotate(-15deg);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: rotate(-15deg) translateY(0);
+  }
+  40% {
+    transform: rotate(-15deg) translateY(-10px);
+  }
+  60% {
+    transform: rotate(-15deg) translateY(-5px);
+  }
+}
+
+/* Stile per il pulsante create story con icona ciak */
+.story-btn {
+  background: linear-gradient(135deg, #2c3e50, #000000);
+  border: none;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.story-btn:hover {
+  background: linear-gradient(135deg, #34495e, #212121);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.story-btn:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: 0.5s;
+}
+
+.story-btn:hover:after {
+  left: 100%;
+}
+
+/* Stili migliorati per il container Poping */
+.popping-container-fixed {
+  display: inline-flex;
+  align-items: center;
+  height: 28px;
+}
+
+.popping-image-fixed {
+  height: 28px !important;
+  width: auto !important;
+  max-height: 28px !important;
+  display: inline-block !important;
+  vertical-align: middle !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.ing-text-fixed {
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  line-height: 28px !important;
+  display: inline-block !important;
+  vertical-align: middle !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  margin-left: -2px !important;
+  color: #333 !important;
+}
+
+/* Assicurati che non ci siano altri stili che interferiscono */
+.popping-container,
+.poping-container,
+.popping-text,
+.poping-text,
+.poping-image,
+.popping-image {
+  all: unset !important;
+}
+
+/* Per dispositivi piccoli, riduci leggermente le dimensioni */
+@media (max-width: 576px) {
+  .popping-image-fixed {
+    height: 24px !important;
+  }
+  .ing-text-fixed {
+    font-size: 14px !important;
+  }
+}
+
+/* Per dispositivi molto piccoli */
+@media (max-width: 320px) {
+  .popping-image-fixed {
+    height: 20px !important;
+  }
+  .ing-text-fixed {
+    font-size: 12px !important;
+  }
+}
+
+/* Stile aggiornato Logo + Testo */
+.brand-text-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 75px; /* Leggermente aumentato */
+}
+
+.logo-container-3d {
+  perspective: 1000px;
+  width: 60px !important; /* Leggermente ingrandito */
+  height: 60px !important; /* Leggermente ingrandito */
+  display: inline-block;
+  margin: 0 !important;
+  position: relative;
+  z-index: 10;
+}
+
+.rotating-logo-3d {
+  width: 100% !important;
+  height: 100% !important;
+  animation: true-3d-rotation 7s infinite linear !important;
+  transform-style: preserve-3d !important;
+}
+
+/* Prima P grande e distintiva - bianca e gialla */
+.brand-first-p {
+  font-family: 'Pacifico', cursive;
+  font-size: 40px; /* Leggermente ingrandito */
+  font-weight: 400;
+  background: linear-gradient(135deg, #FFFFFF 40%, #FFD700 60%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 3px rgba(0,0,0,0.2);
+  margin-right: -12px; /* Sovrappone con il logo */
+}
+
+/* Seconda p più piccola e morbida - bianca (colore popcorn) */
+.brand-second-p {
+  font-family: 'Satisfy', cursive;
+  font-size: 32px; /* Leggermente ingrandito */
+  color: #FFFFFF;
+  text-shadow: 0 0 3px rgba(0,0,0,0.3);
+  margin-left: -10px; /* Avvicina al logo */
+}
+
+/* Trattino */
+.brand-dash {
+  color: #FFFFFF;
+  opacity: 0.8;
+  margin: 0 5px; /* Leggermente aumentato */
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px; /* Leggermente ingrandito */
+}
+
+/* Bucks in verde dollaro con bordi neri fini */
+.brand-bucks {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 32px; /* Leggermente ingrandito */
+  color: #85BB65; /* Verde dollaro */
+  letter-spacing: 0.8px; /* Leggermente esteso */
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+  -webkit-text-stroke: 0.5px #000000; /* Bordi neri fini */
+  text-shadow: 0 0 1px #000000;
+}
+
+@keyframes true-3d-rotation {
+  0% {
+    transform: rotateY(0deg) translateZ(10px);
+    filter: drop-shadow(5px 0 7px rgba(255, 215, 0, 0.8));
+  }
+  25% {
+    transform: rotateY(90deg) translateZ(10px);
+    filter: drop-shadow(0 0 7px rgba(255, 215, 0, 0.5));
+  }
+  50% {
+    transform: rotateY(180deg) translateZ(10px);
+    filter: drop-shadow(-5px 0 7px rgba(255, 215, 0, 0.8));
+  }
+  75% {
+    transform: rotateY(270deg) translateZ(10px);
+    filter: drop-shadow(0 0 7px rgba(255, 215, 0, 0.5));
+  }
+  100% {
+    transform: rotateY(360deg) translateZ(10px);
+    filter: drop-shadow(5px 0 7px rgba(255, 215, 0, 0.8));
+  }
+}
+
+/* Soluzione definitiva per il problema modal e navbar */
+body.modal-open {
+  padding-right: 0 !important;
+  overflow: hidden;
+}
+
+.modal {
+  padding-right: 0 !important;
+}
+
+.modal-open .navbar-fixed-top,
+.modal-open .navbar-fixed-bottom,
+.modal-open .fixed-top,
+.modal-open .sticky-top {
+  padding-right: 0 !important;
+  margin-right: 0 !important;
+}
+
+/* Aggiungi questi stili per il CommentModal */
+.comment-like-btn {
+  color: #dc3545 !important; /* Rosso per i cuori */
+  text-decoration: none !important; /* Rimuove sottolineatura */
+}
+
+.comment-like-count {
+  text-decoration: none !important; /* Rimuove sottolineatura */
+}
+
+.reply-like-btn {
+  text-decoration: none !important; /* Rimuove sottolineatura */
+}
+
+/* Stile specifico per i bottoni like/unlike nelle risposte */
+.comment-action-btn {
+  text-decoration: none !important;
+  font-weight: normal;
+  color: #212529 !important; /* Colore nero invece di blu */
+}
+
+.comment-action-btn:hover {
+  text-decoration: none !important;
+  color: #212529 !important;
+}
+
+/* Stile specifico per il cuore quando è attivo */
+.comment-like-btn.active {
+  color: #dc3545 !important;
+}
+
+/* Stile per i link "Rispondi" e "Mostra/Nascondi risposte" */
+.reply-btn, .toggle-replies-btn {
+  text-decoration: none !important;
+  color: #212529 !important; /* Colore nero */
+}
+
+.reply-btn:hover, .toggle-replies-btn:hover {
+  text-decoration: none !important;
+  color: #495057 !important;
+}
